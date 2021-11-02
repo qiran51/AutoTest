@@ -2,6 +2,8 @@ package com.qiran.testng;
 
 import org.testng.annotations.*;
 
+import java.sql.SQLOutput;
+
 /*
 * BeforeMethod在测试方法执行之前执行的
 * AfterMethod在测试方法执行之后执行的
@@ -13,6 +15,12 @@ import org.testng.annotations.*;
 * AfterClass在类执行之后执行的
 * 注:
 *   它们只执行一次
+*
+* BeforeSuite在class执行之前执行
+* AfterSuite在class执行之后执行
+* 注:
+*   BeforeSuite会在BeforeClass之前执行
+*   AfterSuite会在AfterClass之后执行，它们会在每个class前/后执行
 * */
 public class BasicAnnotationTest {
     //TestNG中最基本的注解，使用在方法上方时表示这个方法时测试的一部分
@@ -41,5 +49,13 @@ public class BasicAnnotationTest {
     @AfterClass
     public void afterClass(){
         System.out.println("AfterClass在类执行之后执行");
+    }
+    @BeforeSuite
+    public void beforeSuite(){
+        System.out.println("BeforeSuite测试套件");
+    }
+    @AfterSuite
+    public void afterSuite(){
+        System.out.println("AfterSuite测试套件");
     }
 }
