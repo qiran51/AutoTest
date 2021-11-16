@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name = "parameter">
+    <test name = "param">
+        <classes>
+            <parameter name = "name" value = "Liam"></parameter>
+            <parameter name = "age" value = "18"></parameter>
+
+            <class name="com.qiran.testng.paramter.ParamterTest"></class>
+        </classes>
+    </test>
+
+</suite>
