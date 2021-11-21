@@ -12,6 +12,7 @@
     <bytecodeTargetLevel>
       <module name="Chapter5" target="1.5" />
       <module name="Qiran" target="1.5" />
+      <module name="TestReport" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
