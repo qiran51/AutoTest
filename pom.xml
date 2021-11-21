@@ -10,5 +10,6 @@
 
     <modules>
         <module>Qiran</module>
+        <module>TestReport</module>
     </modules>
 </project>

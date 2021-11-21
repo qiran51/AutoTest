@@ -7,9 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Qiran" />
+        <module name="TestReport" />
+      </profile>
+      <profile name="Annotation profile for Qiran" enabled="true">
+        <sourceOutputDir name="Qiran/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="Qiran/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="AutoTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AutoTest" target="1.5" />
       <module name="Chapter5" target="1.5" />
       <module name="Qiran" target="1.5" />
       <module name="TestReport" target="1.5" />
